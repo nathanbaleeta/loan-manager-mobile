@@ -1,5 +1,6 @@
 package com.codepoint.loanmanager
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.support.design.widget.Snackbar
@@ -25,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
+
+            // Open expense form activity from expenses list activity
+            val intent = Intent(this, ExpenseFormActivity::class.java)
+            startActivity(intent)
         }
     }
 }

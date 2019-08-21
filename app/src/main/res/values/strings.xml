@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Loan Manager</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_1">Clients</string>
+    <string name="tab_text_2">Expenses</string>
+
+    <string name="title_activity_expense_form">Add Expense</string>
 </resources>

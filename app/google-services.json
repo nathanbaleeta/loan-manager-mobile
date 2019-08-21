@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "253801314479",
+    "firebase_url": "https://hbsl-4bded.firebaseio.com",
+    "project_id": "hbsl-4bded",
+    "storage_bucket": "hbsl-4bded.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253801314479:android:7db626f2349be6ce",
+        "android_client_info": {
+          "package_name": "com.codepoint.loanmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "253801314479-g2dukb8hhe7h34s084vj70i5ufe6ghoj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codepoint.loanmanager",
+            "certificate_hash": "4db62c68a8dd4f0c79c192f88d47fb734de2edca"
+          }
+        },
+        {
+          "client_id": "253801314479-soe3trpv63dsauhdf4l12tn77o2mitql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_cQ3UcIZ89DnBq7M8ttknkdflLYAlURc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "253801314479-soe3trpv63dsauhdf4l12tn77o2mitql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
