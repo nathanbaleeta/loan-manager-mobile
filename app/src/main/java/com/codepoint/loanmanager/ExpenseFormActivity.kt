@@ -11,6 +11,7 @@ import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_expense_form.*
 import java.lang.Integer.parseInt
 import java.text.SimpleDateFormat
+import java.util.Date
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.*
@@ -78,9 +79,9 @@ class ExpenseFormActivity : AppCompatActivity() {
         val expenseDate = txtDate.text.toString().trim()
 
         // Capture datetime when expense was created and store in created
-        val current = LocalDateTime.now()
-        val formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd, HH:mm:ss")
-        val created = current.format(formatter)
+        val sdf = SimpleDateFormat("dd/M/yyyy, hh:mm:ss")
+        val created = sdf.format(Date())
+
 
         // Implement Number format exception in try catch blocks to avoid app crashing
         val amount: Int? = try {
