@@ -12,8 +12,6 @@ import kotlinx.android.synthetic.main.activity_expense_form.*
 import java.lang.Integer.parseInt
 import java.text.SimpleDateFormat
 import java.util.Date
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 import java.util.*
 
 class ExpenseFormActivity : AppCompatActivity() {
@@ -56,11 +54,25 @@ class ExpenseFormActivity : AppCompatActivity() {
 
         }
 
+        //txtDate.setOnClickListener {
+        //    DatePickerDialog(this, dateSetListener,
+        //        cal.get(Calendar.YEAR),
+        //        cal.get(Calendar.MONTH),
+        //        cal.get(Calendar.DAY_OF_MONTH)).show()
+        // }
+
         txtDate.setOnClickListener {
-            DatePickerDialog(this, dateSetListener,
+            val dialog = DatePickerDialog(
+                this, dateSetListener,
                 cal.get(Calendar.YEAR),
                 cal.get(Calendar.MONTH),
-                cal.get(Calendar.DAY_OF_MONTH)).show()
+                cal.get(Calendar.DAY_OF_MONTH)
+            )
+            // Date of expense cannot be in future
+            dialog.datePicker.maxDate = System.currentTimeMillis()
+            dialog.show()
+
+
         }
 
         /***************** Year established Date picker ****************/
